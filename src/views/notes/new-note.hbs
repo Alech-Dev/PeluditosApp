@@ -1,0 +1,46 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Peluditos Formulario</h3>
+        </div>
+        <div class="card-body">
+            <form action="notes-new" method="post">
+                <div class="form-group">
+                    <input type="text" name="title" class="form-control" placeholder="Titulo" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <span>Comparte una foto del peludito</span>
+                    <input type="file" name="image" class="form-control">
+                </div>
+                <br>
+                <div class="form-group">
+                    <span>Danos el nombre del peludito</span>
+                    <br>
+                    <input type="text" name="namePeludito" class="form-control" placeholder="Nombre del peludito">
+                </div>
+                <br>
+                <div class="form-group">
+                    <span>En que ciudad lo encontraste</span>
+                    <br>
+                    <select class="form-select" name="city" aria-label="Default select example">
+                        <option selected>Seleccione</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Medellín">Medellín</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <span>Cuentanos la historia del peludito</span>
+                    <textarea name="description" class="form-control" placeholder="Description"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-success col-md-12 btn-block" type="submit">Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

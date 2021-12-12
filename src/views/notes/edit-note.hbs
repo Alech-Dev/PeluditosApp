@@ -1,0 +1,47 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Nota</h3>
+            <div class="card-body">
+                <form action="edit-note/{{note._id}}?_method=put" method="post">
+                    <input type="hidden" name="_method" value="put">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="title" placeholder="Titulo"
+                            value="{{note.title}}">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <span>Cambia la foto del peludito</span>
+                        <input type="file" name="image" class="form-control">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <span>Modifica el nombre de tu peludito</span>
+                        <input type="text" class="form-control" name="namePeluditos" placeholder="Nombre del Peludito"
+                            value="{{note.namePeludito}}">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <span>Cambia la ciudad lo encontraste</span>
+                        <br>
+                        <select class="form-select" name="city" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="Barranquilla">Barranquilla</option>
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Cali">Cali</option>
+                            <option value="Medellín">Medellín</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <textarea name="description" class="form-control">{{note.description}}</textarea>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn col-md-12 btn-primary btn-block" type="submit">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
